@@ -10,6 +10,7 @@ media
 *.bak 
 
 .env
+venv
 
 # If you are using PyCharm # 
 # User-specific stuff

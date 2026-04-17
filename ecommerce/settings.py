@@ -8,6 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG')
 ALLOWED_HOSTS = ['*']
+# CSRF_TRUSTED_ORIGIN=['']
 
 ROOT_URLCONF = "ecommerce.urls"
 
@@ -146,8 +147,8 @@ AUTH_USER_MODEL = 'account.CustomUser'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'backupaddress7779311@gmail.com'
-EMAIL_HOST_PASSWORD = 'pqvhttrtdgmyftie'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS=True
 DEFAULT_FROM_EMAIL = 'Blog project <backupaddress7779311@gmail.com>'
 
