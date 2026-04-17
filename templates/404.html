@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block navbar %}
+{% include 'elements/navbar.html' %}
+{% endblock navbar %}
+
+
+
+
+{% block content %}
+<div class="container">
+    <h1>Ta strona nie istnieje</h1>
+    <br>
+    <a href="{% url 'index' %}" class="btn btn-info">Powrót do strony gółwnej</a>
+</div>
+
+{% endblock content %}
